@@ -1,275 +1,322 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camping_Emotion</title>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- gsap -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Camping_Emotion</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
-    <!-- 구글 폰트 영문 Italiana -->
-    <!-- font-family: "Italiana", sans-serif; -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
+        <!-- 구글 폰트 영문 Italiana -->
+        <!-- font-family: "Italiana", sans-serif; -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- 구글 폰트 한글 inter body 적용 -->
-    <!-- font-family: "Inter", sans-serif; -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
+        <!-- 구글 폰트 한글 inter body 적용 -->
+        <!-- font-family: "Inter", sans-serif; -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Prata&family=Sora:wght@100..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/index.js"></script>
-  </head>
-  <body>
-    <!-- header -->
-    <header>
-      <nav>
-        <h1>
-          <a href="index.html"><img src="img/main/logo_w.svg" /></a>
-          <a href="index.html"><img src="img/main/logo_b.svg" /></a>
-        </h1>
-        <div class="menu_wrap">
-          <ul class="menu_list">
-            <li>
-              <div class="menu_line"></div>
-              <a href="#">COMMUNITY</a>
-              <div class="menu_line2"></div>
-            </li>
-            <li>
-              <div class="menu_line"></div>
-              <a href="#">BRAND</a>
-              <div class="menu_line2"></div>
-            </li>
-            <li>
-              <div class="menu_line"></div>
-              <a href="#">EVENT</a>
-              <div class="menu_line2"></div>
-            </li>
-            <li>
-              <div class="menu_line"></div>
-              <a href="#">REVIEW</a>
-              <div class="menu_line2"></div>
-            </li>
-            <li>
-              <div class="menu_line"></div>
-              <a href="#">MAP</a>
-              <div class="menu_line2"></div>
-            </li>
-          </ul>
-          <ul class="hambergur">
-            <li></li>
-            <li></li>
-            <!-- <li></li> -->
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- visual 자동 페이드 -->
-    <div id="visual">
-      <ul class="visual_box">
-        <li class="fade_1"></li>
-        <li class="fade_2"></li>
-        <li class="fade_3"></li>
-      </ul>
-
-      <div class="main_txt">
-        <h2>TIME FOR ME</h2>
-        <p>오직 나만을 위한 시간</p>
-        <div class="fade_wrap">
-          <ul class="fade_longbar">
-            <li><div></div></li>
-            <li><div></div></li>
-            <li><div></div></li>
-          </ul>
-          <ul class="fade_button">
-            <li class="prev">
-              <img src="img/main/left_button.png" />
-            </li>
-            <ul class="playbtn">
-              <li class="play">
-                <img src="img/main/play_button.png" />
-              </li>
-              <li class="pause">
-                <img src="img/main/pause_button.png" />
-              </li>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <nav>
+                <h1>
+                    <a href="index.html"><img src="img/main/logo_w.svg" /></a>
+                    <a href="index.html"><img src="img/main/logo_b.svg" /></a>
+                </h1>
+                <div class="menu_wrap">
+                    <ul class="menu_list">
+                        <li>
+                            <div class="menu_line"></div>
+                            <a href="#">COMMUNITY</a>
+                            <div class="menu_line2"></div>
+                        </li>
+                        <li>
+                            <div class="menu_line"></div>
+                            <a href="#">BRAND</a>
+                            <div class="menu_line2"></div>
+                        </li>
+                        <li>
+                            <div class="menu_line"></div>
+                            <a href="#">EVENT</a>
+                            <div class="menu_line2"></div>
+                        </li>
+                        <li>
+                            <div class="menu_line"></div>
+                            <a href="#">REVIEW</a>
+                            <div class="menu_line2"></div>
+                        </li>
+                        <li>
+                            <div class="menu_line"></div>
+                            <a href="#">MAP</a>
+                            <div class="menu_line2"></div>
+                        </li>
+                    </ul>
+                    <ul class="hambergur">
+                        <li></li>
+                        <li></li>
+                        <!-- <li></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- visual 자동 페이드 -->
+        <div id="visual">
+            <ul class="visual_box">
+                <li class="fade_1"></li>
+                <li class="fade_2"></li>
+                <li class="fade_3"></li>
             </ul>
-            <li class="next">
-              <img src="img/main/right_button.png" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- container -->
-    <div id="container">
-      <section class="con1">
-        <div class="con1_bg">
-          <div class="con1_txt">
-            <h2>Nature</h2>
-            <span>따스한햇살|시원한밤공기|별들이보이는새벽|캠핑감성</span>
-          </div>
-        </div>
-      </section>
-      <section class="con2">
-        <ul>
-          <li>
-            <img src="img/layout/con2.png" />
-          </li>
-          <li>
-            <p>
-              편안한 <strong>자연</strong>속에서<br />늘
-              <strong>함께</strong>하세요
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="con3">
-        <ul>
-          <li class="fontend">
-            <div class="fontend_box">
-              <p class="cob">CAMPING</p>
-              <p>BEEF</p>
-              <p class="cob">STARING</p>
-              <p>STORY</p>
+            <!-- 글자 자리 -->
+            <ul class="visual_txt">
+                <li>
+                    <h2>TIME FOR ME</h2>
+                    <p>오직 나만을 위한 시간</p>
+                </li>
+                <li>
+                    <h2>LOREM</h2>
+                    <p>따듯한 바람이 부는 캠핑</p>
+                </li>
+                <li>
+                    <h2>LOREM</h2>
+                    <p>고요한 새벽 별들</p>
+                </li>
+            </ul>
+
+            <div class="main_txt">
+                <div class="fade_wrap">
+                    <ul class="fade_longbar">
+                        <li><div></div></li>
+                        <li><div></div></li>
+                        <li><div></div></li>
+                    </ul>
+                    <ul class="fade_button">
+                        <li class="prev">
+                            <img src="img/main/left_button.png" />
+                        </li>
+                        <ul class="playbtn">
+                            <li class="play">
+                                <img src="img/main/play_button.png" />
+                            </li>
+                            <li class="pause">
+                                <img src="img/main/pause_button.png" />
+                            </li>
+                        </ul>
+                        <li class="next">
+                            <img src="img/main/right_button.png" />
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </li>
-          <li>
-            <ul class="con3_ul_2">
-              <li>
-                <img class="con3_1" src="img/layout/con3_1.png" />
-              </li>
-              <li>
-                <ul class="con3_ul_2">
-                  <li>
-                    <img class="con3_3" src="img/layout/con3_3.png" />
-                  </li>
-                  <li><p>stable</p></li>
+        </div>
+        <!-- container -->
+        <div id="container">
+            <section class="con1">
+                <div class="con1_bg">
+                    <div class="con1_txt">
+                        <h2>Nature</h2>
+                        <span
+                            >따스한햇살|시원한밤공기|별들이보이는새벽|캠핑감성</span
+                        >
+                    </div>
+                </div>
+            </section>
+            <section class="con2">
+                <ul>
+                    <li>
+                        <!-- <img src="img/layout/con2.png" /> -->
+                        <video
+                            src="video/video_camp.mp4"
+                            autoplay
+                            loop
+                            muted
+                        ></video>
+                    </li>
+                    <li>
+                        <p>
+                            편안한 <strong>자연</strong>속에서<br />늘
+                            <strong>함께</strong>하세요
+                        </p>
+                    </li>
                 </ul>
+            </section>
+            <section class="con3">
+                <ul>
+                    <li class="fontend">
+                        <div class="fontend_box">
+                            <p class="cob">CAMPING</p>
+                            <p>BEEF</p>
+                            <p class="cob">STARING</p>
+                            <p>STORY</p>
+                        </div>
+                    </li>
+                    <li>
+                        <ul class="con3_ul_2">
+                            <li>
+                                <img
+                                    class="con3_1"
+                                    src="img/layout/con3_1.png"
+                                />
+                            </li>
+                            <li>
+                                <ul class="con3_ul_2">
+                                    <li>
+                                        <img
+                                            class="con3_3"
+                                            src="img/layout/con3_3.png"
+                                        />
+                                    </li>
+                                    <li class="stable"><p>stable</p></li>
+                                </ul>
 
-                <img class="con3_2" src="img/layout/con3_2.png" />
-              </li>
+                                <img
+                                    class="con3_2"
+                                    src="img/layout/con3_2.png"
+                                />
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="con4">
+                <div class="con4_bg">
+                    <div class="con4line1"></div>
+                    <div class="con4_img">
+                        <div class="left_txt">
+                            <h2>CAMPING</h2>
+                        </div>
+                        <div class="right_txt">
+                            <h2>EMOTION</h2>
+                        </div>
+                    </div>
+                    <div class="con4line2"></div>
+                </div>
+            </section>
+            <section class="con5">
+                <div class="con5_img"></div>
+            </section>
+            <section class="con6">
+                <ul>
+                    <li>
+                        <h2>Tree Camping</h2>
+                    </li>
+                    <li>
+                        <p>
+                            캠핑감성에 오신것을 환영합니다.<br />
+                            도심을 떠나 자연과 함께 특별한 여행을 떠나보세요
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="con7">
+                <ul>
+                    <li>
+                        <div class="opa"></div>
+                        <div class="con7_txt color_w">
+                            <h2>브랜드 스토리</h2>
+                            <p>
+                                바다와 숲 야경과 별이 함께<br />하는
+                                캠핑감성입니다
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="con7_txt">
+                            <h2>사업 분야</h2>
+                            <p>
+                                캠핑 관련 사업<br />
+                                문의는 이메일로 보내주세요
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="opa"></div>
+                        <div class="con7_txt color_w">
+                            <h2>찾아오시는 길</h2>
+                            <p>
+                                맵 가이드를 통해<br />
+                                확인해보실 수 있습니다
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="con8">
+                <div class="con8_opa"></div>
+                <div class="con8_bg"></div>
+                <div class="con8_txt">
+                    <h2>Reservation discount event</h2>
+                    <p>
+                        캠핑 예약자만이 누리는 다양한 할인 혜택을 확인해보세요
+                    </p>
+
+                    <div class="con8_long_bar">
+                        <p class="con8_link_box">
+                            <a href="#">VIEW</a>
+                        </p>
+                        <div class="con8_long_move"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="fo_main_txt">
+                <h2>CAMPING</h2>
+                <ul class="fo_ul1">
+                    <li>
+                        <a href="#">About</a>
+                        <img src="img/main/about_icon.png" />
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                        <img src="img/main/contact_icon.png" />
+                    </li>
+                    <li>
+                        <a href="#">Email</a>
+                        <img src="img/main/mail_icon.png" />
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                        <img src="img/main/insta_icon.png" />
+                    </li>
+                </ul>
+            </div>
+            <div class="top_button">
+                <a href="#"> <img src="img/main/up_button.png" /></a>
+            </div>
+            <ul class="fo_ul2">
+                <li>
+                    <a href="index.html">홈으로</a>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                </li>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li>
+                    <a href="#"><strong>개인정보처리방침</strong></a>
+                </li>
+                <li>
+                    <a href="#">이용안내</a>
+                </li>
             </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="con4">
-        <div class="con4_bg">
-          <div class="con4line1"></div>
-          <div class="con4_img">
-            <div class="left_txt">
-              <h2>CAMPING</h2>
-            </div>
-            <div class="right_txt">
-              <h2>EMOTION</h2>
-            </div>
-          </div>
-          <div class="con4line2"></div>
-        </div>
-      </section>
-      <section class="con5">
-        <div class="con5_img"></div>
-      </section>
-      <section class="con6">
-        <ul>
-          <li>
-            <h2>Tree Camping</h2>
-          </li>
-          <li>
-            <p>
-              캠핑감성에 오신것을 환영합니다.<br />
-              도심을 떠나 자연과 함께 특별한 여행을 떠나보세요
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="con7">
-        <ul>
-          <li>
-            <div class="opa"></div>
-            <div class="con7_txt color_w">
-              <h2>브랜드 스토리</h2>
-              <p>바다와 숲 야경과 별이 함께<br />하는 캠핑감성입니다</p>
-            </div>
-          </li>
-          <li>
-            <div class="con7_txt">
-              <h2>사업 분야</h2>
-              <p>
-                캠핑 관련 사업<br />
-                문의는 이메일로 보내주세요
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="opa"></div>
-            <div class="con7_txt color_w">
-              <h2>찾아오시는 길</h2>
-              <p>
-                맵 가이드를 통해<br />
-                확인해보실 수 있습니다
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="con8">
-        <div class="con8_opa"></div>
-        <div class="con8_bg"></div>
-        <div class="con8_txt">
-          <h2>Reservation discount event</h2>
-          <p>캠핑 예약자만이 누리는 다양한 할인 혜택을 확인해보세요</p>
-
-          <div class="con8_long_bar">
-            <p class="con8_link_box">
-              <a href="#">VIEW</a>
-            </p>
-            <div class="con8_long_move"></div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- footer -->
-    <footer>
-      <ul class="fo_ul">
-        <li>
-          <h2>CAMPING</h2>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-      <div class="top_button">
-        <a href="#"> <img src="img/main/up_button.png" /></a>
-      </div>
-      <ul class="fo_ul2">
-        <li>
-          <a href="index.html">홈으로</a>
-        </li>
-        <li>
-          <a href="#">회사소개</a>
-        </li>
-        <li>
-          <a href="#">이용약관</a>
-        </li>
-        <li>
-          <a href="#"><strong>개인정보처리방침</strong></a>
-        </li>
-        <li>
-          <a href="#">이용안내</a>
-        </li>
-      </ul>
-    </footer>
-    <!-- 스크립트 -->
-    <script>
-      // gsap
-    </script>
-  </body>
+        </footer>
+        <!-- 스크립트 -->
+        <script>
+            // gsap
+        </script>
+    </body>
 </html>
