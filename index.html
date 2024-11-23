@@ -32,8 +32,12 @@
     <header>
       <nav>
         <h1>
-          <a href="index.html"><img src="img/main/logo_w.svg" /></a>
-          <a href="index.html"><img src="img/main/logo_b.svg" /></a>
+          <a href="index.html"
+            ><img src="img/main/logo_w.svg" alt="logo_white"
+          /></a>
+          <a href="index.html"
+            ><img src="img/main/logo_b.svg" alt="logo_brown"
+          /></a>
         </h1>
         <div class="menu_wrap">
           <ul class="menu_list">
@@ -98,7 +102,7 @@
           <li>
             <p>Scroll</p>
           </li>
-          <li><img src="img/main/scrolldown_icon.png" /></li>
+          <li><img src="img/main/scrolldown_icon.png" alt="scrolldown" /></li>
         </ul>
       </div>
 
@@ -111,18 +115,18 @@
           </ul>
           <ul class="fade_button">
             <li class="prev">
-              <img src="img/main/left_button.png" />
+              <img src="img/main/left_button.png" alt="prev" />
             </li>
             <ul class="playbtn">
               <li class="play">
-                <img src="img/main/play_button.png" />
+                <img src="img/main/play_button.png" alt="play" />
               </li>
               <li class="pause">
-                <img src="img/main/pause_button.png" />
+                <img src="img/main/pause_button.png" alt="pause" />
               </li>
             </ul>
             <li class="next">
-              <img src="img/main/right_button.png" />
+              <img src="img/main/right_button.png" alt="next" />
             </li>
           </ul>
         </div>
@@ -146,6 +150,7 @@
               <video
                 class="c2_video"
                 src="video/video_camp.mp4"
+                alt="video"
                 autoplay
                 loop
                 muted
@@ -175,19 +180,27 @@
           <li>
             <ul class="con3_ul_2">
               <li class="upBox">
-                <img class="con3_1" src="img/layout/con3_1.png" />
+                <img class="con3_1" src="img/layout/con3_1.png" alt="fireimg" />
               </li>
               <li>
                 <ul class="con3_ul_2">
                   <li class="upBox">
-                    <img class="con3_3" src="img/layout/con3_3.png" />
+                    <img
+                      class="con3_3"
+                      src="img/layout/con3_3.png"
+                      alt="sunsetimg"
+                    />
                   </li>
                   <li class="stable upBox">
                     <p>stable</p>
                   </li>
                 </ul>
 
-                <img class="con3_2 upBox" src="img/layout/con3_2.png" />
+                <img
+                  class="con3_2 upBox"
+                  src="img/layout/con3_2.png"
+                  alt="beefimg"
+                />
               </li>
             </ul>
           </li>
@@ -276,24 +289,26 @@
         <ul class="fo_ul1">
           <li>
             <a href="#">About</a>
-            <img src="img/main/about_icon.png" />
+            <img src="img/main/about_icon.png" alt="about_icon" />
           </li>
           <li>
             <a href="#">Contact</a>
-            <img src="img/main/contact_icon.png" />
+            <img src="img/main/contact_icon.png" alt="contact_icon" />
           </li>
           <li>
             <a href="#">Email</a>
-            <img src="img/main/mail_icon.png" />
+            <img src="img/main/mail_icon.png" alt="mail_icon" />
           </li>
           <li>
             <a href="#">Instagram</a>
-            <img src="img/main/insta_icon.png" />
+            <img src="img/main/insta_icon.png" alt="insta_icon" />
           </li>
         </ul>
       </div>
       <div class="top_button">
-        <a href="#"> <img src="img/main/up_button.png" /></a>
+        <a href="#">
+          <img src="img/main/up_button.png" alt="up_button_icon"
+        /></a>
       </div>
       <ul class="fo_ul2">
         <li>
@@ -362,7 +377,8 @@
           scrub: 3,
           start: "-20%",
           end: "100%",
-          markers: true,
+
+          //   markers: true,
         },
       });
 
@@ -371,8 +387,82 @@
         duration: "10",
         ease: "none",
         stagger: "6",
+        opacity: "0",
       });
-      tl.to(upBox, { y: "0" });
+      tl.to(upBox, { y: "0", opacity: "1", duration: "3" });
+
+      //   con4 img txt
+      gsap.registerPlugin(ScrollTrigger);
+      let con4img = document.querySelector(".con4_img");
+      //   console.log(con4img);
+      let ltxt = document.querySelector(".left_txt");
+      //   console.log(ltxt);
+      let rtxt = document.querySelector(".right_txt");
+      //   console.log(rtxt);
+
+      let time = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".con4",
+          pin: true,
+          scrub: 1,
+          start: "top top",
+          end: "+=80%",
+          //   markers: true,
+        },
+      });
+      time.to(con4img, {
+        y: "0",
+        scale: "1",
+        duration: "3",
+        ease: "none",
+        stagger: "1",
+      });
+
+      time.to(ltxt, {
+        x: "200%",
+        opacity: "1",
+        duration: "3",
+        stagger: "1",
+      });
+      time.to(rtxt, {
+        x: "300%",
+        opacity: "1",
+        duration: "3",
+        stagger: "1",
+      });
+
+      // con6 h2 p
+
+      gsap.utils.toArray(".con6 h2").forEach(function (con6h2) {
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: con6h2,
+            start: "5% 100%",
+            end: "bottom top",
+            toggleClass: {
+              targets: con6h2,
+              className: "on",
+            },
+            scrub: 1,
+            // markers: true,
+          },
+        });
+      });
+      gsap.utils.toArray(".con6 p").forEach(function (con6p) {
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: con6p,
+            start: "5% 100%",
+            end: "bottom top",
+            toggleClass: {
+              targets: con6p,
+              className: "on",
+            },
+            scrub: 1,
+            // markers: true,
+          },
+        });
+      });
     </script>
   </body>
 </html>

@@ -31,7 +31,7 @@ $(function () {
 
   $(".top_button").on("click", function () {
     let button = $("header").offset().top;
-    console.log(button);
+    // console.log(button);
 
     $("html,body").stop().animate({ scrollTop: button });
   });
@@ -52,13 +52,6 @@ $(function () {
       $("nav").removeClass("on");
     }
     prevScroll = nowScroll;
-
-    // con마다 스크롤
-    // let con = $(this).index();
-    // let target = $("#container section").eq(con).offset().top;
-    // console.log(target);
-
-    // $(".left_txt").addClass("on");
   });
 
   // fo_ul li
@@ -75,7 +68,7 @@ $(function () {
 // visual 자동페이드
 $(function () {
   let total = $(".visual_box li").length;
-  console.log(total);
+  //   console.log(total);
   let i = 0;
 
   // 기본형식 확인
