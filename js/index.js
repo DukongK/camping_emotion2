@@ -65,6 +65,8 @@ $(function () {
   });
 });
 
+// --------------------위 각 페이지 별 공통 적용 --------------------
+
 // visual 자동페이드
 $(function () {
   let total = $(".visual_box li").length;
