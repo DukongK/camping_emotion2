@@ -185,7 +185,7 @@ body {
   }
 
   /* scroll down */
-  .scrollDown {
+  /* .scrollDown {
     position: absolute;
     right: 50px;
     bottom: 50px;
@@ -203,6 +203,45 @@ body {
   }
   .scrollDown img {
     opacity: 0.5;
+  } */
+
+  /* scroll 수정 */
+
+  .scroll_ul {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .scrolldown p {
+    letter-spacing: 3px;
+    opacity: 0.5;
+    color: #fff;
+    margin-right: 20px;
+  }
+
+  .scroll_ul img {
+    opacity: 0.5;
+  }
+
+  .scroll_2 {
+    animation: scmove 3s infinite;
+  }
+  @keyframes scmove {
+    0%,
+    10% {
+      transform: translateY(0%);
+    }
+    60%,
+    70%,
+    80%,
+    85%,
+    90%,
+    95%,
+    100% {
+      transform: translateY(50%);
+    }
   }
 
   /* main_txt */
@@ -1675,6 +1714,7 @@ height: 100%;
     transform: translate(-50%, -50%);
   }
 }
+/* 태블릿 사이즈 ---------------------- */
 
 @media (max-width: 1200px) and (min-width: 760px) {
   /* header */
@@ -1858,7 +1898,7 @@ height: 100%;
   }
 
   /* scroll down */
-  .scrollDown {
+  /* .scrollDown {
     position: absolute;
     right: 50px;
     bottom: 50px;
@@ -1876,6 +1916,44 @@ height: 100%;
   }
   .scrollDown img {
     opacity: 0.5;
+  } */
+  /* scroll 수정 */
+
+  .scroll_ul {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+  }
+
+  .scrolldown p {
+    letter-spacing: 3px;
+    opacity: 0.5;
+    color: #fff;
+    margin-right: 20px;
+  }
+
+  .scroll_ul img {
+    opacity: 0.5;
+  }
+
+  .scroll_2 {
+    animation: scmove 3s infinite;
+  }
+  @keyframes scmove {
+    0%,
+    10% {
+      transform: translateY(0%);
+    }
+    60%,
+    70%,
+    80%,
+    85%,
+    90%,
+    95%,
+    100% {
+      transform: translateY(50%);
+    }
   }
 
   /* main_txt */
