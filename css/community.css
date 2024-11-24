@@ -12,7 +12,7 @@ body {
   nav h1 > a {
     display: none;
   }
-  nav h1 a:first-child {
+  nav h1 a:last-child {
     display: block;
   }
 
@@ -245,6 +245,258 @@ body {
     100% {
       transform: translateY(50%);
     }
+  }
+
+  /* container */
+  /* con1 */
+
+  .con1 div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .con1_img {
+    background-image: url(../img/1COMMUNITY/sub1_con1_1.png);
+    width: 90%;
+    height: 600px;
+    border-top-left-radius: 50px;
+    margin: 0px auto;
+    margin-top: 200px;
+  }
+
+  .con1_txt {
+    background-color: #fff6ef;
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+  .txt_wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .con1_txt h2 {
+    font-size: 50px;
+    font-weight: normal;
+    color: #86543a;
+    font-family: "Italiana", sans-serif;
+  }
+  .con1_txt p {
+    color: #86543a;
+    letter-spacing: 20px;
+  }
+
+  .con1_img2 {
+    background-image: url(../img/1COMMUNITY/sub1_con1_2.png);
+    width: 90%;
+    height: 600px;
+    margin: 0px auto;
+    border-bottom-right-radius: 50px;
+  }
+
+  /* con2 */
+
+  .con2 ul {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    align-items: center;
+  }
+
+  .con2 ul li img {
+    width: 180px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+  .con2 .down {
+    margin-top: 300px;
+  }
+
+  .con2_line {
+    background-color: #510900;
+    width: 1px;
+    height: 600px;
+  }
+
+  .con2 p {
+    font-size: 50px;
+    color: #86543a;
+    font-family: "Italiana", sans-serif;
+  }
+  .con2 .cob {
+    color: #bfa191;
+    letter-spacing: 10px;
+  }
+
+  /* con3 */
+
+  .con3 {
+    margin: 200px auto;
+    width: 1400px;
+  }
+
+  .con3 h2 {
+    font-size: 120px;
+    font-weight: normal;
+    color: #86543a;
+    font-family: "Italiana", sans-serif;
+  }
+
+  .con3 ul {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .con3 ul li img {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+  }
+
+  .con3 h3 {
+    margin-top: 10px;
+    font-size: 28px;
+  }
+  .con3 p {
+    font-size: 20px;
+  }
+
+  /* con4 */
+
+  .con4_wrap {
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .con4_bg {
+    background-color: #222;
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+
+  .con4 ul {
+    display: flex;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 50px;
+  }
+
+  .con4 li {
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+  .con4 ul li img {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .con4_opa {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .con4 .txt {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #fff;
+    font-family: "Italiana", sans-serif;
+  }
+  .con4 .txt h2 {
+    font-size: 50px;
+    font-weight: normal;
+  }
+
+  .con4 .txt p {
+    font-size: 20px;
+  }
+  .con4 .t_left h2 {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .con4 .t_left p {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+  }
+
+  .con4 .t_center h2 {
+    position: absolute;
+    left: 35%;
+    top: 20px;
+  }
+  .con4 .t_center p {
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+  }
+
+  .con4 .t_right h2 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .con4 .t_right p {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  /* con5 */
+
+  .con5_bg {
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .con5 ul {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 50px;
+  }
+
+  .con5_line {
+    background-color: #86543a;
+    width: 900px;
+    height: 1px;
+  }
+
+  .con5 ul li h2 {
+    font-size: 120px;
+    font-weight: normal;
+    color: #86543a;
+    font-family: "Italiana", sans-serif;
+  }
+  .con5 ul li p {
+    font-size: 25px;
+    color: #555;
   }
 
   /* footer */
