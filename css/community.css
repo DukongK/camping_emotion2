@@ -83,6 +83,23 @@ body {
   .menu_line2.on {
     height: 40px;
   }
+
+  .menu_list li {
+    position: relative;
+  }
+  .menu_click_line {
+    background-color: #fff;
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    transition: 1s;
+  }
+
+  .menu_click_line.on {
+    width: 50%;
+  }
   /* hambergur */
 
   .hambergur {
@@ -326,4 +343,13 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+/* 태블릿 사이즈 ---------------------- */
+
+@media (max-width: 1200px) and (min-width: 760px) {
+}
+
+/* 모바일 760px --------------------------- */
+@media (max-width: 760px) {
 }

@@ -65,12 +65,12 @@ $(function () {
   });
 });
 
-// visual img txt
+// visual img txt menuline
 
 $(function () {
   $(".visual_img").addClass("on");
   $(".visual_txt p").addClass("on");
   $(".visual_txt h2").addClass("on");
+  $(".menu_click_line").addClass("on");
 });
-
 // --------------------위 각 페이지 별 공통 적용 --------------------
