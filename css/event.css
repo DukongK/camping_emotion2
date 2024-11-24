@@ -290,6 +290,10 @@ body {
     margin-right: 400px;
   }
 
+  .con1 strong {
+    color: #510900;
+  }
+
   .con1_img_1 li {
     position: relative;
   }
@@ -316,6 +320,14 @@ body {
     margin-right: -300px;
     float: right;
   }
+  .con1_border {
+    border: 2px solid #d7b59e;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 100%;
+    margin-left: -500px;
+    margin-top: 400px;
+  }
 
   /* con1_2 */
 
@@ -336,6 +348,25 @@ body {
     margin-bottom: -20px;
   }
 
+  .con1_2_txt h2 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+  .con1_2_txt p {
+    font-size: 20px;
+  }
+  .opa_txt {
+    opacity: 0.5;
+  }
+  .con1_2 .img_opa2 {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
   .con1_2 li {
     position: relative;
     width: 500px;
@@ -345,7 +376,8 @@ body {
   }
 
   .con1_2 .img_opa {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -382,6 +414,176 @@ body {
     font-size: 70px;
     font-weight: normal;
     color: #86543a;
+  }
+  /* con3 */
+
+  .con3_txt {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    margin-bottom: -10px;
+  }
+
+  .con3_txt .txt120 {
+    font-size: 120px;
+    font-weight: normal;
+    color: #86543a;
+    font-family: "Italiana", sans-serif;
+  }
+
+  .con3_txt .txt70 {
+    font-size: 70px;
+    font-weight: normal;
+    color: #86543a;
+  }
+  /* con3 event page */
+
+  .event_page {
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .event_page li {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+
+  .event_page li > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .event_opa {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+
+  .event_txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 80px;
+  }
+  .event_txt h2 {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: normal;
+  }
+  .event_txt p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  }
+
+  .arrow > img {
+    cursor: pointer;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .event_list {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    border-bottom-left-radius: 20px;
+  }
+
+  /* con4 */
+  .con4 {
+    background-color: #fff6ef;
+    width: 100%;
+    height: 400px;
+  }
+  .con4 ul {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+
+    height: 100%;
+  }
+  .con4 ul h2 {
+    font-size: 100px;
+    line-height: 70px;
+    font-weight: normal;
+    color: #86543a;
+    font-family: "Italiana", sans-serif;
+  }
+
+  .con4 ul p {
+    font-size: 25px;
+    color: #86543a;
+  }
+
+  .con4 .scale_1 {
+    color: #d6bca7;
+    transform: scaleY(-1);
+  }
+
+  /* con5 */
+  .con5 {
+    position: relative;
+  }
+  .con5_bg {
+    background-image: url(../img/3EVENT/sub3_con4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  }
+
+  .bg_opa {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  .con5_txt {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .con5_txt p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+  }
+  .con5_txt h2 {
+    margin: 15px 0px;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .con5 .line_1 {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    height: 1px;
   }
 
   /* footer */
