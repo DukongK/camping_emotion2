@@ -83,6 +83,8 @@ $(function () {
         console.log(con1Count);
         let con2Txt = $(this).scrollTop();
         console.log(con2Txt);
+        let con3 = $(this).scrollTop();
+        console.log(con3);
         // con1Count
         if (con1Count >= 800 && con1Count <= 1000) {
             // h2 txt
@@ -100,7 +102,7 @@ $(function () {
                 }
             }, 150); // 숫자 속도 조절
         }
-
+        // con2
         if (con2Txt >= 2000 && con2Txt <= 2400) {
             $(".con2_txt > p").addClass("on");
             $(".con2_txt h2").addClass("on");
@@ -109,5 +111,11 @@ $(function () {
             $(".left_p2").addClass("on");
             $(".left_p2_2").addClass("on");
         }
+
+        if (con3 >= 2500 && con3 <= 3000) {
+            $(".con3 ul li").addClass("on");
+        }
     });
 });
+
+// 2938 con3 <

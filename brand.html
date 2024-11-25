@@ -252,6 +252,22 @@
         </footer>
         <script>
             // gsap
+
+            // con5
+            $(function () {
+                let img = gsap.utils.toArray(".con5 .con5_list li");
+                gsap.to(img, {
+                    xPercent: -100 * (img.length - 1),
+                    scrollTrigger: {
+                        trigger: ".con5",
+                        pin: true,
+                        scrub: 3,
+                        start: "center center",
+                        end: "200%",
+                        markers: true,
+                    },
+                });
+            });
         </script>
     </body>
 </html>
