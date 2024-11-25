@@ -81,6 +81,9 @@ $(function () {
     $(window).on("scroll", function () {
         let con1Count = $(this).scrollTop();
         console.log(con1Count);
+        let con2Txt = $(this).scrollTop();
+        console.log(con2Txt);
+        // con1Count
         if (con1Count >= 800 && con1Count <= 1000) {
             // h2 txt
 
@@ -96,6 +99,15 @@ $(function () {
                     $(".count1").text(count);
                 }
             }, 150); // 숫자 속도 조절
+        }
+
+        if (con2Txt >= 2000 && con2Txt <= 2400) {
+            $(".con2_txt > p").addClass("on");
+            $(".con2_txt h2").addClass("on");
+            $(".left_p").addClass("on");
+            $(".left_p_1").addClass("on");
+            $(".left_p2").addClass("on");
+            $(".left_p2_2").addClass("on");
         }
     });
 });
