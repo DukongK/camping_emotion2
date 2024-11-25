@@ -80,3 +80,21 @@ $(function () {
 });
 
 // --------------------위 각 페이지 별 공통 적용 --------------------
+
+$(function () {
+    // scroll page
+    $(window).on("scroll", function () {
+        let con1 = $(this).scrollTop();
+        console.log(con1);
+
+        // con1
+        if (con1 >= 600 && con1 <= 700) {
+            $(".con1_img_1 p").addClass("on");
+            $(".con1_line").addClass("on");
+            $(".img_move").addClass("on");
+            // $(".con1_bg").addClass("on");
+        }
+    });
+});
+
+// 600 con1 <

@@ -300,13 +300,35 @@ body {
     .con1_img_1 p {
         font-size: 30px;
         color: #86543a;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 1s;
     }
+    .con1_img_1 p.on {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .con1_img_1 .pdelay {
+        transition-delay: 0.5s;
+    }
+
     .con1_img_1 img {
         border-radius: 30px;
         width: 500px;
         height: 150px;
         object-fit: cover;
     }
+
+    .img_move {
+        transform: translateX(-50px);
+        transition: 1s;
+        opacity: 0;
+    }
+    .img_move.on {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    /* 딜레이 주기 */
 
     .m_right {
         margin-right: -400px;
@@ -327,16 +349,22 @@ body {
     }
     .con1_line {
         background-color: #86543a;
-        width: 50px;
+        width: 0px;
         height: 5px;
         position: absolute;
         top: -5px;
-        left: 85px;
+        left: 100px;
+        transition: 1s;
+    }
+
+    .con1_line.on {
+        width: 50px;
     }
     .line_left {
         position: absolute;
         left: 0px;
         top: -5px;
+        transition-delay: 0.5s;
     }
 
     .con1_bg {
@@ -347,6 +375,13 @@ body {
         margin-top: -800px;
         margin-right: -300px;
         float: right;
+        /* transform: translateX(100%); */
+        transition: 1s;
+        /* opacity: 0; */
+    }
+    .con1_bg.on {
+        transform: translateX(0%);
+        opacity: 1;
     }
     .con1_border {
         border: 2px solid #d7b59e;
@@ -721,7 +756,9 @@ body {
         position: relative;
     }
     /* nav */
-    nav h1{z-index:10;}
+    nav h1 {
+        z-index: 10;
+    }
     nav h1 > a {
         display: none;
     }
@@ -817,7 +854,8 @@ body {
 
     /* hambergur */
 
-    .hambergur {z-index:10;
+    .hambergur {
+        z-index: 10;
         cursor: pointer;
         width: 15px;
         height: 30px;
@@ -1433,7 +1471,9 @@ body {
         position: relative;
     }
     /* nav */
-    nav h1{z-index:10;}
+    nav h1 {
+        z-index: 10;
+    }
     nav h1 > a {
         display: none;
     }
@@ -1529,7 +1569,8 @@ body {
 
     /* hambergur */
 
-    .hambergur {z-index:10;
+    .hambergur {
+        z-index: 10;
         cursor: pointer;
         width: 15px;
         height: 30px;
@@ -1567,9 +1608,9 @@ body {
         transform: rotate(45deg) translateY(70%);
         margin-top: -20px;
     }
-      /* menu_slide */
+    /* menu_slide */
 
-      .menu_slide {
+    .menu_slide {
         position: absolute;
         left: 0px;
         top: 0px;
