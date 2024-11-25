@@ -1177,6 +1177,11 @@ body {
         font-weight: normal;
         font-family: "Italiana", sans-serif;
         color: #86543a;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+    .con6_txt h2.on {
+        transform: translateX(0%);
     }
     .con6_txt .count2 {
         font-family: "Inter", sans-serif;
@@ -1187,6 +1192,13 @@ body {
         font-size: 30px;
         font-family: "Inter", sans-serif;
         color: #510900;
+        transform: translateY(50px);
+        transition: 1s;
+        opacity: 0;
+    }
+    .con6_txt p.on {
+        transform: translateY(0px);
+        opacity: 1;
     }
 
     /* footer */

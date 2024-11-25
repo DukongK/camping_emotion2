@@ -117,7 +117,7 @@ $(function () {
         if (con3 >= 2500 && con3 <= 3000) {
             $(".con3 ul li").addClass("on");
         }
-        if (con6 >= 6000 && con6 <= 6200) {
+        if (con6 >= 5500 && con6 <= 6000) {
             $(".con6_txt h2").addClass("on");
             $(".con6_txt p").addClass("on");
 
