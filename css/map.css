@@ -469,29 +469,7 @@ body {
     top: 0px;
   }
 
-  /* .move_txt {
-    width: 100%;
-    display: flex;
-    overflow: hidden;
-  }
-  .move_txt p {
-    font-size: 30px;
-    color: #c4a086;
-    font-family: "Italiana", sans-serif;
-    animation: mtxt 20s infinite linear;
-  }
-  .move_txt span {
-    margin-right: 30px;
-  }
-
-  @keyframes mtxt {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  } */
+  /* move */
 
   .move_txt {
     display: flex;
