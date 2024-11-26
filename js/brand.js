@@ -121,7 +121,7 @@ $(function () {
             }, 150); // 숫자 속도 조절
         }
         // con2
-        if (con2Txt >= 2000 && con2Txt <= 2400) {
+        if (con2Txt >= 1800 && con2Txt <= 2000) {
             $(".con2_txt > p").addClass("on");
             $(".con2_txt h2").addClass("on");
             $(".left_p").addClass("on");
@@ -130,10 +130,10 @@ $(function () {
             $(".left_p2_2").addClass("on");
         }
 
-        if (con3 >= 2500 && con3 <= 3000) {
+        if (con3 >= 2200 && con3 <= 2300) {
             $(".con3 ul li").addClass("on");
         }
-        if (con6 >= 5500 && con6 <= 6000) {
+        if (con6 >= 5000 && con6 <= 6000) {
             $(".con6_txt h2").addClass("on");
             $(".con6_txt p").addClass("on");
 

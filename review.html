@@ -295,5 +295,34 @@
                 </li>
             </ul>
         </footer>
+        <script>
+
+            // gsap
+
+            // con1
++
+            gsap.registerPlugin(ScrollTrigger);
+            let upBox = document.querySelectorAll(".con1_bg1");
+            let tl = gsap.timeline({
+                scrollTrigger:{
+                    trigger:".con1",
+                    pin:true,
+                    scrub:3,
+                    start:"25% top",
+                    end:"+=100%",
+                    // markers:true,
+                }
+            })
+
+            tl.from(upBox,{
+                y:"100%",
+                duration:"3",
+                ease:"none",
+                stagger:"3",
+            })
+            tl.to(upBox,{y:"0"})
+;
+
+        </script>
     </body>
 </html>

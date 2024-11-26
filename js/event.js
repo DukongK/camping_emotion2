@@ -4,7 +4,6 @@ $(function () {
     $(".menu_slide").toggleClass("on");
   });
 
-
   
     // menu_slide mouseenter
     $(".menu_slide li").on("mouseenter", function () {
@@ -98,7 +97,13 @@ $(function () {
   // scroll page
   $(window).on("scroll", function () {
     let con1 = $(this).scrollTop();
-    console.log(con1);
+    // console.log(con1);
+    let con3 = $(this).scrollTop();
+    // console.log(con3)
+    let con4 = $(this).scrollTop();
+    // console.log(con4)
+    let con5 =$(this).scrollTop();
+    console.log(con5)
 
     // con1
     if (con1 >= 600 && con1 <= 700) {
@@ -111,7 +116,73 @@ $(function () {
       $(".con1_2_wrap > h2").addClass("on");
       $(".opa_right > h2").addClass("on");
     }
+// con3
+ if(con3 >= 2800 && con3 <= 3000){
+    $(".con3_txt .txt120").addClass("on")
+    $(".con3_txt .txt70").addClass("on")
+  }
+  if(con3 >= 3100 && con3 <= 3200){
+$(".th1").addClass("on")
+$(".ap1").addClass("on")
+  }
+  if(con3 >= 3400 && con3 <= 3500){
+    
+    $(".th2").addClass("on")
+    $(".ap2").addClass("on")
+  }
+  if(con3 >= 3800 && con3 <= 3900){
+    $(".th3").addClass("on")
+    $(".ap3").addClass("on")
+  }
+// con4
+if(con4 >= 4000 && con4 <= 4300)
+{
+
+  $(".con4_down").addClass("on")
+  $(".con4_up").addClass("on")
+  $(".con4_p_move").addClass("on")
+
+}
+// con5
+
+if(con5 >= 4500 && con5 <= 4700)
+{
+$(".line_1").addClass("on");
+$(".con5_h2_move").addClass("on");
+
+}
+
+
   });
 });
 
 // 600 con1 <
+
+// 2900 con3 <
+
+// 4265 con4 <
+// 4671 < con5
+
+
+
+// event_page li mouseenter
+
+$(function(){
+ 
+
+  $(".event_page li").on("mouseenter",function(){ let event = $(this).index();
+    $(".event_opa").eq(event).addClass("on")
+    $(".event_btn").eq(event).addClass("on")
+    $(".event_list").eq(event).addClass("on")
+  })
+  $(".event_page li").on("mouseleave",function(){
+    $(".event_opa").removeClass("on")
+    $(".event_btn").removeClass("on")
+    $(".event_list").removeClass("on")
+  })
+
+
+
+
+
+})
