@@ -4,6 +4,16 @@ $(function () {
         $(".menu_slide").toggleClass("on");
     });
 
+    // menu_slide mouseenter
+    $(".menu_slide li").on("mouseenter", function () {
+        $(this).children(".slide_line1").addClass("on");
+        $(this).children(".slide_line2").addClass("on");
+    });
+    $(".menu_slide li").on("mouseleave", function () {
+        $(this).children(".slide_line1").removeClass("on");
+        $(this).children(".slide_line2").removeClass("on");
+    });
+
     // header menu line
 
     $(".menu_list li").on("mouseenter", function () {
@@ -91,6 +101,9 @@ $(function () {
     });
 });
 
+// con7 6400 < 7000
+// con8 6500 < 7300
+
 // visual 자동페이드
 $(function () {
     let total = $(".visual_box li").length;
@@ -112,16 +125,6 @@ $(function () {
     // 함수
     start();
     fade();
-    // long();
-    // function long() {
-    //     $(".fade_longbar li").children("div").css({ width: "0%" });
-
-    //     $(".fade_longbar li")
-    //         .eq(i)
-    //         .children("div")
-    //         .stop()
-    //         .animate({ width: "100%" }, 2000);
-    // }
 
     function fade() {
         $(".visual_box li").stop().fadeOut();
