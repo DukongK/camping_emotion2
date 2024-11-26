@@ -167,42 +167,36 @@ body {
     font-size: 20px;
   }
 
-  .menu_slide ul li{
+  .menu_slide ul li {
     position: relative;
   }
 
-  .slide_line1{
+  .slide_line1 {
     background-color: #fff;
-    width:0%;
-    height:1px;
+    width: 0%;
+    height: 1px;
     transition: 0.5s;
     position: absolute;
-    left:0px;
-    top:-5px;
-  
+    left: 0px;
+    top: -5px;
   }
 
-  .slide_line1.on{
-    width:100%;
+  .slide_line1.on {
+    width: 100%;
   }
 
-  .slide_line2{
+  .slide_line2 {
     background-color: #fff;
-    height:1px;
-    width:0%;
+    height: 1px;
+    width: 0%;
     transition: 0.5s;
     position: absolute;
-    right:0px;
-    bottom:-5px;
-  
+    right: 0px;
+    bottom: -5px;
   }
-  .slide_line2.on{
-    width:100%;
- 
+  .slide_line2.on {
+    width: 100%;
   }
-
-
-
 
   /* visual 자동 페이드 */
 
@@ -1068,40 +1062,36 @@ body {
     height: 40px;
   }
 
-  .menu_slide ul li{
+  .menu_slide ul li {
     position: relative;
   }
 
-  .slide_line1{
+  .slide_line1 {
     background-color: #fff;
-    width:0%;
-    height:1px;
+    width: 0%;
+    height: 1px;
     transition: 0.5s;
     position: absolute;
-    left:0px;
-    top:-5px;
-  
+    left: 0px;
+    top: -5px;
   }
 
-  .slide_line1.on{
-    width:100%;
+  .slide_line1.on {
+    width: 100%;
   }
 
-  .slide_line2{
+  .slide_line2 {
     background-color: #fff;
-    height:1px;
-    width:0%;
+    height: 1px;
+    width: 0%;
     transition: 0.5s;
     position: absolute;
-    right:0px;
-    bottom:-5px;
-  
+    right: 0px;
+    bottom: -5px;
   }
-  .slide_line2.on{
-    width:100%;
- 
+  .slide_line2.on {
+    width: 100%;
   }
-
 
   /* hambergur */
 
@@ -2074,41 +2064,36 @@ height: 100%;
     font-size: 20px;
   }
 
-
-  .menu_slide ul li{
+  .menu_slide ul li {
     position: relative;
   }
 
-  .slide_line1{
+  .slide_line1 {
     background-color: #fff;
-    width:0%;
-    height:1px;
+    width: 0%;
+    height: 1px;
     transition: 0.5s;
     position: absolute;
-    left:0px;
-    top:-5px;
-  
+    left: 0px;
+    top: -5px;
   }
 
-  .slide_line1.on{
-    width:100%;
+  .slide_line1.on {
+    width: 100%;
   }
 
-  .slide_line2{
+  .slide_line2 {
     background-color: #fff;
-    height:1px;
-    width:0%;
+    height: 1px;
+    width: 0%;
     transition: 0.5s;
     position: absolute;
-    right:0px;
-    bottom:-5px;
-  
+    right: 0px;
+    bottom: -5px;
   }
-  .slide_line2.on{
-    width:100%;
- 
+  .slide_line2.on {
+    width: 100%;
   }
-
 
   /* visual 자동 페이드 */
 
