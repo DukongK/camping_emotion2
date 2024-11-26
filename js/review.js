@@ -94,7 +94,11 @@ $(function () {
 $(function () {
   $(window).on("scroll", function () {
     let con2 = $(this).scrollTop();
-    console.log(con2);
+    // console.log(con2);
+    let con3 = $(this).scrollTop();
+    // console.log(con3);
+    let con5 = $(this).scrollTop();
+    // console.log(con5);
 
     if (con2 >= 2700 && con2 <= 2800) {
       $(".con2 li:first-child img").addClass("on");
@@ -102,8 +106,22 @@ $(function () {
       $(".con2 li:last-child img ").addClass("on");
       $(" .pleft ").addClass("on");
       $(" .pright ").addClass("on");
+    } else if (con3 >= 3200 && con3 <= 3300) {
+      $(".con3 .banner").addClass("on");
+    } else if (con3 >= 3500 && con3 <= 3600) {
+      $(".con3 > ul h2").addClass("on");
+      $(".review_line").addClass("on");
+      $(".con3 p").addClass("on");
+    } else if (con5 >= 5100 && con5 <= 5200) {
+      $(".con5 > h2:first-child ").addClass("on");
+      $(".con5_txt_down ").addClass("on");
+      $(" .con5_line").addClass("on");
     }
   });
 });
 
 // con2 > 2700
+// con3 > 3200
+// con5 > 5100
+
+$(function () {});
