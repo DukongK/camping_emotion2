@@ -4,9 +4,8 @@ $(function () {
         $(".menu_slide").toggleClass("on");
     });
 
-
-      // menu_slide mouseenter
-      $(".menu_slide li").on("mouseenter", function () {
+    // menu_slide mouseenter
+    $(".menu_slide li").on("mouseenter", function () {
         $(this).children(".slide_line1").addClass("on");
         $(this).children(".slide_line2").addClass("on");
     });
@@ -96,13 +95,15 @@ $(function () {
     // scroll page
     $(window).on("scroll", function () {
         let con1Count = $(this).scrollTop();
-        console.log(con1Count);
+        // console.log(con1Count);
         let con2Txt = $(this).scrollTop();
-        console.log(con2Txt);
+        // console.log(con2Txt);
         let con3 = $(this).scrollTop();
-        console.log(con3);
+        // console.log(con3);
         let con6 = $(this).scrollTop();
-        console.log(con6);
+        // console.log(con6);
+        let footer = $(this).scrollTop();
+        console.log(footer);
         // con1Count
         if (con1Count >= 800 && con1Count <= 1000) {
             // h2 txt
@@ -128,12 +129,9 @@ $(function () {
             $(".left_p_1").addClass("on");
             $(".left_p2").addClass("on");
             $(".left_p2_2").addClass("on");
-        }
-
-        if (con3 >= 2200 && con3 <= 2300) {
+        } else if (con3 >= 2800 && con3 <= 2900) {
             $(".con3 ul li").addClass("on");
-        }
-        if (con6 >= 5000 && con6 <= 6000) {
+        } else if (con6 >= 6000 && con6 <= 6100) {
             $(".con6_txt h2").addClass("on");
             $(".con6_txt p").addClass("on");
 
@@ -147,6 +145,10 @@ $(function () {
                     $(".count2").text(count);
                 }
             }, 200); // 숫자 속도 조절
+        } else if (footer >= 6200 && footer <= 6300) {
+            $(".right_mh2").addClass("on");
+            $(".upLi").addClass("on");
+            $(".downLi").addClass("on");
         }
     });
 });

@@ -67,6 +67,11 @@ $(function () {
             $("nav").removeClass("on");
         }
         prevScroll = nowScroll;
+
+
+
+
+        
     });
 
     // fo_ul li
@@ -87,9 +92,11 @@ $(function () {
 $(function () {
     // scroll page
     $(window).on("scroll", function () {
+        let con1 = $(this).scrollTop();
         let con7 = $(this).scrollTop();
         let con8 = $(this).scrollTop();
-        console.log(con7);
+        let footer = $(this).scrollTop();
+        console.log(footer);
         if (con7 >= 6400 && con7 <= 7000) {
             // h2 txt
 
@@ -97,12 +104,38 @@ $(function () {
         } else if (con8 >= 6500 && con8 < 7300) {
             $(".con8_txt h2").addClass("on");
             $(".con8_txt p").addClass("on");
+           
+        }
+        else if (con1 >= 500 && con1 <= 550) {
+            $(".up").addClass("on");
+            $(".down").addClass("on");
+            $(".con1_txt span").addClass("on");
+            $(".con1_txt h2").addClass("on");
+            $(".con1_bg").addClass("on");
+        }
+        else if(footer >= 7300 && footer <= 7400){
+            $(".right_mh2").addClass("on")
+$(".upLi").addClass("on")
+$(".downLi").addClass("on")
+
         }
     });
 });
 
+
+
+$(function(){
+// $(".right_mh2").addClass("on")
+// $(".upLi").addClass("on")
+// $(".downLi").addClass("on")
+
+})
+
+
+// con1 750
 // con7 6400 < 7000
 // con8 6500 < 7300
+// 푸터 7300
 
 // visual 자동페이드
 $(function () {

@@ -96,9 +96,11 @@ $(function () {
     let con2 = $(this).scrollTop();
     // console.log(con2);
     let con3 = $(this).scrollTop();
-    // console.log(con3);
+    console.log(con3);
     let con5 = $(this).scrollTop();
     // console.log(con5);
+    let footer = $(this).scrollTop();
+    // console.log(footer);
 
     if (con2 >= 2700 && con2 <= 2800) {
       $(".con2 li:first-child img").addClass("on");
@@ -106,9 +108,9 @@ $(function () {
       $(".con2 li:last-child img ").addClass("on");
       $(" .pleft ").addClass("on");
       $(" .pright ").addClass("on");
-    } else if (con3 >= 3200 && con3 <= 3300) {
-      $(".con3 .banner").addClass("on");
     } else if (con3 >= 3500 && con3 <= 3600) {
+      $(".con3 .banner").addClass("on");
+    } else if (con3 >= 3700 && con3 <= 3800) {
       $(".con3 > ul h2").addClass("on");
       $(".review_line").addClass("on");
       $(".con3 p").addClass("on");
@@ -117,6 +119,13 @@ $(function () {
       $(".con5_txt_down ").addClass("on");
       $(" .con5_line").addClass("on");
     }
+
+    else if(footer >= 5800 && footer <= 5900){
+      $(".right_mh2").addClass("on")
+$(".upLi").addClass("on")
+$(".downLi").addClass("on")
+
+  }
   });
 });
 

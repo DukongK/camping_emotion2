@@ -91,3 +91,38 @@ $(function () {
 });
 
 // --------------------위 각 페이지 별 공통 적용 --------------------
+
+
+$(function(){
+
+    $(window).on("scroll",function(){
+let con1 = $(this).scrollTop();
+// console.log(con1)
+let footer = $(this).scrollTop();
+console.log(footer);
+
+if(con1 >= 1000 && con1 <= 1200){
+    $(".txt_up").addClass("on")
+    $(".con1_img").addClass("on")
+    $(".con1_img2").addClass("on")
+}
+
+
+else if(footer >= 4800 && footer <= 4900){
+    $(".right_mh2").addClass("on")
+$(".upLi").addClass("on")
+$(".downLi").addClass("on")
+
+}
+
+    })
+})
+
+
+// con1 > 1300
+
+$(function(){
+    $(".con4 ul li:nth-child(1)").addClass("on")
+$(".con4 ul li:nth-child(2)").addClass("on")
+
+})

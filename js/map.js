@@ -91,3 +91,24 @@ $(function () {
     $(".menu_click_line").addClass("on");
 });
 // --------------------위 각 페이지 별 공통 적용 --------------------
+
+
+
+$(function(){
+
+
+    $(window).on("scroll", function () {
+     
+        let footer = $(this).scrollTop();
+        console.log(footer);
+     
+        if(footer >= 4200 && footer <= 4300){
+            $(".right_mh2").addClass("on")
+$(".upLi").addClass("on")
+$(".downLi").addClass("on")
+
+        }
+    });
+
+    
+})

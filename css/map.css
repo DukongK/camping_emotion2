@@ -109,42 +109,53 @@ body {
     .hambergur {
         z-index: 10;
         cursor: pointer;
-        width: 15px;
+        width: 30px;
         height: 30px;
         display: flex;
         justify-content: space-between;
-    }
-    .hambergur li:nth-child(1) {
+        /* border: 1px solid red; */
+        position: relative;
+        
+      }
+    
+      .hambergur li:nth-child(1) {
         background-color: #fff;
         width: 1px;
         height: 100%;
         transition: 0.5s;
-    }
-    .hambergur li:nth-child(2) {
+        position: absolute;
+        right:5px;
+      
+      }
+      .hambergur li:nth-child(2) {
         background-color: #fff;
         width: 1px;
         height: 100%;
         margin-top: -10px;
         transition: 0.5s;
-    }
-
-    .hambergur li:nth-child(1).on {
+        position: absolute;
+        left:5px;
+        
+      }
+    
+      .hambergur li:nth-child(1).on {
         margin-top: -10px;
-    }
-
-    .hambergur li:nth-child(2).on {
+      }
+    
+      .hambergur li:nth-child(2).on {
         margin-top: 0px;
-    }
-
-    .hambergur li:nth-child(1).re {
+      }
+    
+      .hambergur li:nth-child(1).re {
         transform: rotate(-45deg) translateY(-20%);
         margin-top: 0px;
-    }
-
-    .hambergur li:nth-child(2).re {
+      }
+    
+      .hambergur li:nth-child(2).re {
         transform: rotate(45deg) translateY(70%);
         margin-top: -20px;
-    }
+        margin-left:30px;
+      }
 
     /* menu_slide */
 
@@ -626,6 +637,39 @@ body {
         color: #fff;
     }
 
+
+    /* 푸터 움직임 */
+  .right_mh2{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .right_mh2.on{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .upLi{
+    transform: translateY(150px);
+    transition: 0.8s;
+    opacity: 0;
+    transition-delay: 0.5s;
+  }
+  .upLi.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .downLi{
+    transform: translateY(-120px);
+    transition: 0.8s;
+    opacity: 0;
+    transition-delay: 0.8s;
+  }
+  .downLi.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
     /* top_button */
     .top_button {
         position: absolute;
@@ -770,43 +814,53 @@ body {
     .hambergur {
         z-index: 10;
         cursor: pointer;
-        width: 15px;
+        width: 30px;
         height: 30px;
         display: flex;
         justify-content: space-between;
-    }
-    .hambergur li:nth-child(1) {
+        /* border: 1px solid red; */
+        position: relative;
+        
+      }
+    
+      .hambergur li:nth-child(1) {
         background-color: #fff;
         width: 1px;
         height: 100%;
         transition: 0.5s;
-    }
-    .hambergur li:nth-child(2) {
+        position: absolute;
+        right:5px;
+      
+      }
+      .hambergur li:nth-child(2) {
         background-color: #fff;
         width: 1px;
         height: 100%;
         margin-top: -10px;
         transition: 0.5s;
-    }
-
-    .hambergur li:nth-child(1).on {
+        position: absolute;
+        left:5px;
+        
+      }
+    
+      .hambergur li:nth-child(1).on {
         margin-top: -10px;
-    }
-
-    .hambergur li:nth-child(2).on {
+      }
+    
+      .hambergur li:nth-child(2).on {
         margin-top: 0px;
-    }
-
-    .hambergur li:nth-child(1).re {
+      }
+    
+      .hambergur li:nth-child(1).re {
         transform: rotate(-45deg) translateY(-20%);
         margin-top: 0px;
-    }
-
-    .hambergur li:nth-child(2).re {
+      }
+    
+      .hambergur li:nth-child(2).re {
         transform: rotate(45deg) translateY(70%);
         margin-top: -20px;
-    }
-
+        margin-left:30px;
+      }
     /* menu_slide */
 
     .menu_slide {
@@ -1281,6 +1335,40 @@ body {
       transform: scale(1.1);
   } */
 
+/* 푸터 움직임 */
+.right_mh2{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .right_mh2.on{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .upLi{
+    transform: translateY(150px);
+    transition: 0.8s;
+    opacity: 0;
+    transition-delay: 0.5s;
+  }
+  .upLi.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .downLi{
+    transform: translateY(-120px);
+    transition: 0.8s;
+    opacity: 0;
+    transition-delay: 0.8s;
+  }
+  .downLi.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+
     /* fo_ul2 */
     .fo_ul2 {
         background-color: #86543a;
@@ -1434,46 +1522,56 @@ body {
         width: 50%;
     }
     /* hambergur */
-
     .hambergur {
         z-index: 10;
         cursor: pointer;
-        width: 15px;
+        width: 30px;
         height: 30px;
         display: flex;
         justify-content: space-between;
-    }
-    .hambergur li:nth-child(1) {
+        /* border: 1px solid red; */
+        position: relative;
+        
+      }
+    
+      .hambergur li:nth-child(1) {
         background-color: #fff;
         width: 1px;
         height: 100%;
         transition: 0.5s;
-    }
-    .hambergur li:nth-child(2) {
+        position: absolute;
+        right:5px;
+      
+      }
+      .hambergur li:nth-child(2) {
         background-color: #fff;
         width: 1px;
         height: 100%;
         margin-top: -10px;
         transition: 0.5s;
-    }
-
-    .hambergur li:nth-child(1).on {
+        position: absolute;
+        left:5px;
+        
+      }
+    
+      .hambergur li:nth-child(1).on {
         margin-top: -10px;
-    }
-
-    .hambergur li:nth-child(2).on {
+      }
+    
+      .hambergur li:nth-child(2).on {
         margin-top: 0px;
-    }
-
-    .hambergur li:nth-child(1).re {
+      }
+    
+      .hambergur li:nth-child(1).re {
         transform: rotate(-45deg) translateY(-20%);
         margin-top: 0px;
-    }
-
-    .hambergur li:nth-child(2).re {
+      }
+    
+      .hambergur li:nth-child(2).re {
         transform: rotate(45deg) translateY(70%);
         margin-top: -20px;
-    }
+        margin-left:30px;
+      }
     /* menu_slide */
 
     .menu_slide {
@@ -1984,6 +2082,40 @@ body {
         color: #fff;
         font-size: 12px;
     }
+
+
+    /* 푸터 움직임 */
+  .right_mh2{
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .right_mh2.on{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  .upLi{
+    transform: translateY(150px);
+    transition: 0.8s;
+    opacity: 0;
+    transition-delay: 0.5s;
+  }
+  .upLi.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  .downLi{
+    transform: translateY(-120px);
+    transition: 0.8s;
+    opacity: 0;
+    transition-delay: 0.8s;
+  }
+  .downLi.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 
     /* top_button */
     .top_button {

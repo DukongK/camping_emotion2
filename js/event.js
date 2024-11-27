@@ -103,7 +103,9 @@ $(function () {
     let con4 = $(this).scrollTop();
     // console.log(con4)
     let con5 =$(this).scrollTop();
-    console.log(con5)
+    // console.log(con5)
+    let footer = $(this).scrollTop();
+    console.log(footer);
 
     // con1
     if (con1 >= 600 && con1 <= 700) {
@@ -112,30 +114,30 @@ $(function () {
       $(".img_move").addClass("on");
       $(".con1_bg").addClass("on");
     }
-    if (con1 >= 1100 && con1 <= 1200) {
+    else if (con1 >= 1100 && con1 <= 1200) {
       $(".con1_2_wrap > h2").addClass("on");
       $(".opa_right > h2").addClass("on");
     }
 // con3
- if(con3 >= 2800 && con3 <= 3000){
+ else if(con3 >= 2800 && con3 <= 3000){
     $(".con3_txt .txt120").addClass("on")
     $(".con3_txt .txt70").addClass("on")
   }
-  if(con3 >= 3100 && con3 <= 3200){
+  else if(con3 >= 3100 && con3 <= 3200){
 $(".th1").addClass("on")
 $(".ap1").addClass("on")
   }
-  if(con3 >= 3400 && con3 <= 3500){
+  else if(con3 >= 3400 && con3 <= 3500){
     
     $(".th2").addClass("on")
     $(".ap2").addClass("on")
   }
-  if(con3 >= 3800 && con3 <= 3900){
+  else if(con3 >= 3800 && con3 <= 3900){
     $(".th3").addClass("on")
     $(".ap3").addClass("on")
   }
 // con4
-if(con4 >= 4000 && con4 <= 4300)
+else if(con4 >= 4000 && con4 <= 4300)
 {
 
   $(".con4_down").addClass("on")
@@ -145,12 +147,21 @@ if(con4 >= 4000 && con4 <= 4300)
 }
 // con5
 
-if(con5 >= 4500 && con5 <= 4700)
+else if(con5 >= 4500 && con5 <= 4700)
 {
 $(".line_1").addClass("on");
 $(".con5_h2_move").addClass("on");
 
 }
+
+
+else if(footer >= 4480 && footer <= 4500){
+  $(".right_mh2").addClass("on")
+$(".upLi").addClass("on")
+$(".downLi").addClass("on")
+
+}
+
 
 
   });
