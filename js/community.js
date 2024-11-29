@@ -4,7 +4,6 @@ $(function () {
         $(".menu_slide").toggleClass("on");
     });
 
-    
     // menu_slide mouseenter
     $(".menu_slide li").on("mouseenter", function () {
         $(this).children(".slide_line1").addClass("on");
@@ -92,37 +91,62 @@ $(function () {
 
 // --------------------위 각 페이지 별 공통 적용 --------------------
 
-
-$(function(){
-
-    $(window).on("scroll",function(){
-let con1 = $(this).scrollTop();
-// console.log(con1)
-let footer = $(this).scrollTop();
-console.log(footer);
-
-if(con1 >= 1000 && con1 <= 1200){
-    $(".txt_up").addClass("on")
-    $(".con1_img").addClass("on")
-    $(".con1_img2").addClass("on")
-}
+$(function () {
+    $(window).on("scroll", function () {
+        let con1 = $(this).scrollTop();
+        // console.log(con1)
+        let footer = $(this).scrollTop();
+        // console.log(footer);
+        let con4 = $(this).scrollTop();
+        // console.log(con4);
+        let con3 = $(this).scrollTop();
+        // console.log(con3);
+        let con5 = $(this).scrollTop();
+        console.log(con5);
 
 
-else if(footer >= 4800 && footer <= 4900){
-    $(".right_mh2").addClass("on")
-$(".upLi").addClass("on")
-$(".downLi").addClass("on")
+        if (con1 >= 580 && con1 <= 600) {
+            $(".con1_img").addClass("on");
+        } else if (con1 >= 1200 && con1 <= 1300) {
+            $(".txt_up").addClass("on");
+        } else if (con1 >= 1400 && con1 <= 1500) {
+            $(".con1_img2").addClass("on");
+        } 
+        else if(con3 >= 3500 && con3 <= 3700){
 
-}
-
-    })
-})
-
+            $(".con3 h2").addClass("on");
+            $(".con3 li:nth-child(2) img").addClass("on");
+            $(".con3 li:nth-child(1) img").addClass("on");
+            $(".con3 li:nth-child(3) img").addClass("on");
+            $(".con3 li:nth-child(2) h3").addClass("on");
+            $(".con3 li:nth-child(1) h3").addClass("on");
+            $(".con3 li:nth-child(3) h3").addClass("on");
+            $(".con3 li p").addClass("on");
+        }
+        else if(con4 >= 4400 && con4 <= 4500 ){
+            $(".con4 ul li:nth-child(1)").addClass("on");
+            $(".con4 ul li:nth-child(2)").addClass("on");
+            $(".con4 ul li:nth-child(3)").addClass("on");
+        }
+        else if(con5 >= 4900 && con5 <= 5200){
+            $(".con5_line").addClass("on");
+            $(".con5_bg ul li:last-child").addClass("on");
+        }
+        
+        else if (footer >= 4800 && footer <= 4900) {
+            $(".right_mh2").addClass("on");
+            $(".upLi").addClass("on");
+            $(".downLi").addClass("on");
+        }
+        
+    });
+});
 
 // con1 > 1300
+// con4 4550
+// con5 5252
 
-$(function(){
-    $(".con4 ul li:nth-child(1)").addClass("on")
-$(".con4 ul li:nth-child(2)").addClass("on")
-
-})
+// $(function () {
+//     $(".con4 ul li:nth-child(1)").addClass("on");
+//     $(".con4 ul li:nth-child(2)").addClass("on");
+// });

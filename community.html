@@ -246,27 +246,35 @@
                 <ul class="fo_ul1">
                     <li>
                         <div class="upLi">
-                        <a href="#">About</a>
-                        <img src="img/main/about_icon.png" alt="about_icon" /></div>
-                    </li>
-                    <li>
-                        <div class="downLi">
-                        <a href="#">Contact</a>
-                        <img
-                            src="img/main/contact_icon.png"
-                            alt="contact_icon"
-                        /></div>
-                    </li>
-                    <li>
-                        <div class="upLi">
-                        <a href="#">Email</a>
-                        <img src="img/main/mail_icon.png" alt="mail_icon" />
+                            <a href="#">About</a>
+                            <img
+                                src="img/main/about_icon.png"
+                                alt="about_icon"
+                            />
                         </div>
                     </li>
                     <li>
                         <div class="downLi">
-                        <a href="#">Instagram</a>
-                        <img src="img/main/insta_icon.png" alt="insta_icon" />
+                            <a href="#">Contact</a>
+                            <img
+                                src="img/main/contact_icon.png"
+                                alt="contact_icon"
+                            />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="upLi">
+                            <a href="#">Email</a>
+                            <img src="img/main/mail_icon.png" alt="mail_icon" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="downLi">
+                            <a href="#">Instagram</a>
+                            <img
+                                src="img/main/insta_icon.png"
+                                alt="insta_icon"
+                            />
                         </div>
                     </li>
                 </ul>
@@ -301,57 +309,94 @@
             // con2
             // 밑으로 다 내리면 글자 색상이 life에 진하게 변함
             // 이미지들은 상하로 움직이며 나타남
-            // left_line , right_line 좌우 선
             // cor , cob < 글자 색상
             // up , down 이미지 li 클래스명
 
             gsap.registerPlugin(ScrollTrigger);
-            let Up = document.querySelectorAll(".up")
+            let Up = document.querySelectorAll(".up");
             // console.log(Up)
-            let Down = document.querySelectorAll(".down")
+            let Down = document.querySelectorAll(".down");
             // console.log(Down)
-            let tl = gsap.timeline({
-                scrollTrigger:{
-                    trigger:".con2",
-                    pin:true,
-                    scrub:2,
-                    start:"10%"
-                    ,end:"100%",
+            let cor = document.querySelector(".cor");
+            // console.log(cor);
+            let cob = document.querySelector(".cob");
+            // console.log(cob);
+
+            // con2 폰트
+
+            let cof = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".con2",
+                    // pin: true,
+                    scrub: 2,
+                    start: "10%",
+                    end: "100%",
                     // markers:true,
-                }
+                },
             });
-            tl.from(Up,{
-                y:"-100%",
-                duration:"3",
-                ease:"none",
-                stagger:"4",
-                opacity:"0",
+            cof.from(cor, {
+                y: "0",
+                duration: "1",
+                ease: "none",
+                stagger: "2",
+                color: "#86543a",
             });
-            tl.to(Up,{y:"0",opacity:"1",});
+            cof.to(cor, { y: "0", color: "#bfa191" });
 
-
-let tm = gsap.timeline({
-    scrollTrigger:{
-        trigger:".con2",
-        // pin:true,
-        scrub:2,
-        start:"10%",
-        end:"100%",
-        // markers:true,
-    }
-});
-tm.from(Down,{
-    y:"100%",
-    duration:"3",
-    ease:"none",
-    stagger:"4",
-opacity:"0",
-});
-tm.to(Down,{y:"0",opacity:"1",})
+            cof.from(cob, {
+                y: "0",
+                duration: "1",
+                ease: "none",
+                stagger: "2",
+                color: "#bfa191",
+            });
+            cof.to(cob, { y: "0", color: "#510900" });
 
 
 
+            
 
+            // con2 이미지
+
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".con2",
+                    pin: true,
+                    scrub: 2,
+                    start: "10%",
+                    end: "100%",
+                    // markers:true,
+                },
+            });
+            tl.from(Up, {
+                y: "-100%",
+                duration: "3",
+                ease: "none",
+                stagger: "4",
+                opacity: "0",
+            });
+
+            tl.to(Up, { y: "0", opacity: "1" });
+
+            let tm = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".con2",
+                    // pin:true,
+                    scrub: 2,
+                    start: "10%",
+                    end: "100%",
+                    // markers:true,
+                },
+            });
+
+            tm.from(Down, {
+                y: "100%",
+                duration: "3",
+                ease: "none",
+                stagger: "4",
+                opacity: "0",
+            });
+            tm.to(Down, { y: "0", opacity: "1" });
         </script>
     </body>
 </html>

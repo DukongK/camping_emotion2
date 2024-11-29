@@ -642,9 +642,26 @@ body {
     font-family: "Italiana", sans-serif;
     font-size: 60px;
     margin-bottom: 10px;
+    transform: translateY(100px);
+    transition: 1s;
+    opacity: 0;
   }
+  .con4_txt h2.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+
   .con4_txt p {
     font-size: 25px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 1s;
+  }
+  .con4_txt p.on{
+    transform: translateY(0px);
+    opacity: 1;
   }
 
   /* con5 */
@@ -1485,10 +1502,26 @@ body {
     font-family: "Italiana", sans-serif;
     font-size: 60px;
     margin-bottom: 10px;
+    transform: translateY(100px);
+    transition: 1s;
+    opacity: 0;
   }
+  .con4_txt h2.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
   .con4_txt p {
     font-size: 20px;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 1s;
   }
+  .con4_txt p.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 
   /* con5 */
 
@@ -2336,12 +2369,27 @@ body {
     font-family: "Italiana", sans-serif;
     font-size: 60px;
     margin-bottom: 10px;
+    transform: translateY(100px);
+    transition: 1s;
+    opacity: 0;
   
+  }
+  .con4_txt h2.on{
+    transform: translateY(0px);
+    opacity: 1;
   }
   .con4_txt p {
     font-size: 16px;
     width:100%;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 1s;
   }
+  .con4_txt p.on{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 
   /* con5 */
 

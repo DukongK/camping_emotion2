@@ -195,23 +195,17 @@
                                 <p>따스한햇살</p>
                             </li>
                             <li>
-                                <span>
-                                    |&nbsp
-                                </span> 
+                                <span> |&nbsp </span>
                             </li>
                             <li class="down">
-                                 <p>시원한밤공기</p>
+                                <p>시원한밤공기</p>
                             </li>
                             <li>
-                                <span>
-                                    |&nbsp
-                                </span> 
+                                <span> |&nbsp </span>
                             </li>
                             <li class="up"><p>별들이보이는새벽</p></li>
                             <li>
-                                <span>
-                                    |&nbsp
-                                </span> 
+                                <span> |&nbsp </span>
                             </li>
                             <li class="down"><p>캠핑감성</p></li>
                         </ul>
@@ -253,9 +247,9 @@
                     <li class="fontend">
                         <div class="fontend_box">
                             <p class="cob">CAMPING</p>
-                            <p>BEEF</p>
+                            <p class="cor">BEEF</p>
                             <p class="cob">STARING</p>
-                            <p>STORY</p>
+                            <p class="cor">STORY</p>
                         </div>
                     </li>
                     <li>
@@ -379,27 +373,35 @@
                 <ul class="fo_ul1">
                     <li>
                         <div class="upLi">
-                        <a href="#">About</a>
-                        <img src="img/main/about_icon.png" alt="about_icon" /></div>
-                    </li>
-                    <li>
-                        <div class="downLi">
-                        <a href="#">Contact</a>
-                        <img
-                            src="img/main/contact_icon.png"
-                            alt="contact_icon"
-                        /></div>
-                    </li>
-                    <li>
-                        <div class="upLi">
-                        <a href="#">Email</a>
-                        <img src="img/main/mail_icon.png" alt="mail_icon" />
+                            <a href="#">About</a>
+                            <img
+                                src="img/main/about_icon.png"
+                                alt="about_icon"
+                            />
                         </div>
                     </li>
                     <li>
                         <div class="downLi">
-                        <a href="#">Instagram</a>
-                        <img src="img/main/insta_icon.png" alt="insta_icon" />
+                            <a href="#">Contact</a>
+                            <img
+                                src="img/main/contact_icon.png"
+                                alt="contact_icon"
+                            />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="upLi">
+                            <a href="#">Email</a>
+                            <img src="img/main/mail_icon.png" alt="mail_icon" />
+                        </div>
+                    </li>
+                    <li>
+                        <div class="downLi">
+                            <a href="#">Instagram</a>
+                            <img
+                                src="img/main/insta_icon.png"
+                                alt="insta_icon"
+                            />
                         </div>
                     </li>
                 </ul>
@@ -469,6 +471,9 @@
             // con3 upBox
             gsap.registerPlugin(ScrollTrigger);
             let upBox = document.querySelectorAll(".upBox");
+            let cor = document.querySelectorAll(".cor"),
+                cob = document.querySelectorAll(".cob");
+            console.log(cob);
             let tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".con3",
@@ -476,8 +481,7 @@
                     scrub: 3,
                     start: "-20%",
                     end: "100%",
-
-                    //   markers: true,
+                    // markers: true,
                 },
             });
 
@@ -489,6 +493,24 @@
                 opacity: "0",
             });
             tl.to(upBox, { y: "0", opacity: "1", duration: "3" });
+
+            tl.from(cor, {
+                y: "0",
+                duration: "1",
+                ease: "none",
+                stagger: "2",
+                color: "#86543a",
+            });
+            tl.to(cor, { y: "0", duration: "0.5", color: "#e4b899" });
+
+            tl.from(cob, {
+                y: "0",
+                duration: "1",
+                ease: "none",
+                stagger: "2",
+                color: "#e4b899",
+            });
+            tl.to(cob, { y: "0", duration: "0,5", color: "#86543a" });
 
             //   con4 img txt
             gsap.registerPlugin(ScrollTrigger);

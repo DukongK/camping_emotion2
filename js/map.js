@@ -4,8 +4,6 @@ $(function () {
         $(".menu_slide").toggleClass("on");
     });
 
-
-    
     // menu_slide mouseenter
     $(".menu_slide li").on("mouseenter", function () {
         $(this).children(".slide_line1").addClass("on");
@@ -92,23 +90,62 @@ $(function () {
 });
 // --------------------위 각 페이지 별 공통 적용 --------------------
 
-
-
-$(function(){
-
-
+$(function () {
     $(window).on("scroll", function () {
-     
+        let con1 = $(this).scrollTop();
+        // console.log(con1);
+        let con2 = $(this).scrollTop();
+        // console.log(con2);
+        let con3 = $(this).scrollTop();
+        // console.log(con3);
+        let con4 = $(this).scrollTop();
+        console.log(con4);
         let footer = $(this).scrollTop();
-        console.log(footer);
-     
-        if(footer >= 4200 && footer <= 4300){
-            $(".right_mh2").addClass("on")
-$(".upLi").addClass("on")
-$(".downLi").addClass("on")
+        // console.log(footer);
 
+        if (con1 >= 540 && 560 <= con1) {
+            $(".rot").addClass("on");
+            $(".con1_line").addClass("on");
+            $(".con1 p").addClass("on");
+        }
+        if (con2 >= 1500 && con2 <= 1600) {
+            $(".con2_txt").addClass("on");
+        } else if (con2 >= 1900 && con2 <= 2000) {
+            $(".wrap1 li:first-child").addClass("on");
+            $(".wrap1 li:last-child").addClass("on");
+        } else if (con2 >= 2450 && con2 <= 2500) {
+            $(".wrap2 li:last-child").addClass("on");
+            $(".wrap2 li:first-child").addClass("on");
+        }
+
+        if (con3 >= 3000 && con3 <= 3100) {
+            $(".con3_bg h2").addClass("on");
+            $(".con3_img").addClass("on");
+        }
+        if(con4 >=3600 && con4 <= 3700){
+            $(".map_wrap h2").addClass("on");
+        }
+        else if(con4 >= 3750 && con4 <= 3800){
+            $("iframe").addClass("on");
+            $(".map_pin").addClass("on");
+        }
+        else if(con4 >= 3900 && con4 <= 4000){
+            $(".map_wrap p").addClass("on");
+            $(".con4_line1").addClass("on");
+            $(".con4_line2").addClass("on");
+        }
+
+        if (footer >= 4200 && footer <= 4300) {
+            $(".right_mh2").addClass("on");
+            $(".upLi").addClass("on");
+            $(".downLi").addClass("on");
         }
     });
+});
 
-    
-})
+// con1 540
+// con2 h2 1550
+// con2 wrap1 1900
+// con2 wrap2 2450
+// con3 3000
+// con4 h2 3600

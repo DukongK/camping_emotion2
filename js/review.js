@@ -96,7 +96,9 @@ $(function () {
     let con2 = $(this).scrollTop();
     // console.log(con2);
     let con3 = $(this).scrollTop();
-    console.log(con3);
+    // console.log(con3);
+    let con4 = $(this).scrollTop();
+    console.log(con4);
     let con5 = $(this).scrollTop();
     // console.log(con5);
     let footer = $(this).scrollTop();
@@ -114,7 +116,13 @@ $(function () {
       $(".con3 > ul h2").addClass("on");
       $(".review_line").addClass("on");
       $(".con3 p").addClass("on");
-    } else if (con5 >= 5100 && con5 <= 5200) {
+    } 
+    
+    else if(con4 >= 4630 && con4 <= 4700){
+      $(".con4_txt h2").addClass("on");
+      $(".con4_txt p").addClass("on");
+    }
+    else if (con5 >= 5100 && con5 <= 5200) {
       $(".con5 > h2:first-child ").addClass("on");
       $(".con5_txt_down ").addClass("on");
       $(" .con5_line").addClass("on");
@@ -131,6 +139,7 @@ $(".downLi").addClass("on")
 
 // con2 > 2700
 // con3 > 3200
+// con4 4630
 // con5 > 5100
 
 $(function () {});
