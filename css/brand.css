@@ -105,41 +105,36 @@ body {
     width: 50%;
   }
 
-
-  .menu_slide ul li{
+  .menu_slide ul li {
     position: relative;
   }
 
-  .slide_line1{
+  .slide_line1 {
     background-color: #fff;
-    width:0%;
-    height:1px;
+    width: 0%;
+    height: 1px;
     transition: 0.5s;
     position: absolute;
-    left:0px;
-    top:-5px;
-  
+    left: 0px;
+    top: -5px;
   }
 
-  .slide_line1.on{
-    width:100%;
+  .slide_line1.on {
+    width: 100%;
   }
 
-  .slide_line2{
+  .slide_line2 {
     background-color: #fff;
-    height:1px;
-    width:0%;
+    height: 1px;
+    width: 0%;
     transition: 0.5s;
     position: absolute;
-    right:0px;
-    bottom:-5px;
-  
+    right: 0px;
+    bottom: -5px;
   }
-  .slide_line2.on{
-    width:100%;
- 
+  .slide_line2.on {
+    width: 100%;
   }
-
 
   /* hambergur */
 
@@ -152,7 +147,6 @@ body {
     justify-content: space-between;
     /* border: 1px solid red; */
     position: relative;
-    
   }
 
   .hambergur li:nth-child(1) {
@@ -161,8 +155,7 @@ body {
     height: 100%;
     transition: 0.5s;
     position: absolute;
-    right:5px;
-  
+    right: 5px;
   }
   .hambergur li:nth-child(2) {
     background-color: #fff;
@@ -171,8 +164,7 @@ body {
     margin-top: -10px;
     transition: 0.5s;
     position: absolute;
-    left:5px;
-    
+    left: 5px;
   }
 
   .hambergur li:nth-child(1).on {
@@ -191,7 +183,7 @@ body {
   .hambergur li:nth-child(2).re {
     transform: rotate(45deg) translateY(70%);
     margin-top: -20px;
-    margin-left:30px;
+    margin-left: 30px;
   }
 
   /* menu_slide */
@@ -692,35 +684,34 @@ body {
     color: #fff;
   }
 
-
   /* 푸터 움직임 */
-  .right_mh2{
+  .right_mh2 {
     transform: translateX(-200px);
     opacity: 0;
     transition: 1s;
   }
-  .right_mh2.on{
+  .right_mh2.on {
     transform: translateX(0px);
     opacity: 1;
   }
 
-  .upLi{
+  .upLi {
     transform: translateY(150px);
     transition: 0.8s;
     opacity: 0;
     transition-delay: 0.5s;
   }
-  .upLi.on{
+  .upLi.on {
     transform: translateY(0px);
     opacity: 1;
   }
-  .downLi{
+  .downLi {
     transform: translateY(-120px);
     transition: 0.8s;
     opacity: 0;
     transition-delay: 0.8s;
   }
-  .downLi.on{
+  .downLi.on {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -759,10 +750,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
-
-
-
 }
 
 /* 태블릿 사이즈 ---------------------- */
@@ -869,39 +856,35 @@ body {
     width: 50%;
   }
 
-
-  .menu_slide ul li{
+  .menu_slide ul li {
     position: relative;
   }
 
-  .slide_line1{
+  .slide_line1 {
     background-color: #fff;
-    width:0%;
-    height:1px;
+    width: 0%;
+    height: 1px;
     transition: 0.5s;
     position: absolute;
-    left:0px;
-    top:-5px;
-  
+    left: 0px;
+    top: -5px;
   }
 
-  .slide_line1.on{
-    width:100%;
+  .slide_line1.on {
+    width: 100%;
   }
 
-  .slide_line2{
+  .slide_line2 {
     background-color: #fff;
-    height:1px;
-    width:0%;
+    height: 1px;
+    width: 0%;
     transition: 0.5s;
     position: absolute;
-    right:0px;
-    bottom:-5px;
-  
+    right: 0px;
+    bottom: -5px;
   }
-  .slide_line2.on{
-    width:100%;
- 
+  .slide_line2.on {
+    width: 100%;
   }
 
   /* hambergur */
@@ -915,7 +898,6 @@ body {
     justify-content: space-between;
     /* border: 1px solid red; */
     position: relative;
-    
   }
 
   .hambergur li:nth-child(1) {
@@ -924,8 +906,7 @@ body {
     height: 100%;
     transition: 0.5s;
     position: absolute;
-    right:5px;
-  
+    right: 5px;
   }
   .hambergur li:nth-child(2) {
     background-color: #fff;
@@ -934,8 +915,7 @@ body {
     margin-top: -10px;
     transition: 0.5s;
     position: absolute;
-    left:5px;
-    
+    left: 5px;
   }
 
   .hambergur li:nth-child(1).on {
@@ -954,7 +934,7 @@ body {
   .hambergur li:nth-child(2).re {
     transform: rotate(45deg) translateY(70%);
     margin-top: -20px;
-    margin-left:30px;
+    margin-left: 30px;
   }
 
   /* menu_slide */
@@ -1461,33 +1441,33 @@ body {
   }
 
   /* 푸터 움직임 */
-  .right_mh2{
+  .right_mh2 {
     transform: translateX(-200px);
     opacity: 0;
     transition: 1s;
   }
-  .right_mh2.on{
+  .right_mh2.on {
     transform: translateX(0px);
     opacity: 1;
   }
 
-  .upLi{
+  .upLi {
     transform: translateY(150px);
     transition: 0.8s;
     opacity: 0;
     transition-delay: 0.5s;
   }
-  .upLi.on{
+  .upLi.on {
     transform: translateY(0px);
     opacity: 1;
   }
-  .downLi{
+  .downLi {
     transform: translateY(-120px);
     transition: 0.8s;
     opacity: 0;
     transition-delay: 0.8s;
   }
-  .downLi.on{
+  .downLi.on {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -1632,39 +1612,35 @@ body {
     width: 50%;
   }
 
-
-  .menu_slide ul li{
+  .menu_slide ul li {
     position: relative;
   }
 
-  .slide_line1{
+  .slide_line1 {
     background-color: #fff;
-    width:0%;
-    height:1px;
+    width: 0%;
+    height: 1px;
     transition: 0.5s;
     position: absolute;
-    left:0px;
-    top:-5px;
-  
+    left: 0px;
+    top: -5px;
   }
 
-  .slide_line1.on{
-    width:100%;
+  .slide_line1.on {
+    width: 100%;
   }
 
-  .slide_line2{
+  .slide_line2 {
     background-color: #fff;
-    height:1px;
-    width:0%;
+    height: 1px;
+    width: 0%;
     transition: 0.5s;
     position: absolute;
-    right:0px;
-    bottom:-5px;
-  
+    right: 0px;
+    bottom: -5px;
   }
-  .slide_line2.on{
-    width:100%;
- 
+  .slide_line2.on {
+    width: 100%;
   }
 
   /* hambergur */
@@ -1678,7 +1654,6 @@ body {
     justify-content: space-between;
     /* border: 1px solid red; */
     position: relative;
-    
   }
 
   .hambergur li:nth-child(1) {
@@ -1687,8 +1662,7 @@ body {
     height: 100%;
     transition: 0.5s;
     position: absolute;
-    right:5px;
-  
+    right: 5px;
   }
   .hambergur li:nth-child(2) {
     background-color: #fff;
@@ -1697,8 +1671,7 @@ body {
     margin-top: -10px;
     transition: 0.5s;
     position: absolute;
-    left:5px;
-    
+    left: 5px;
   }
 
   .hambergur li:nth-child(1).on {
@@ -1717,7 +1690,7 @@ body {
   .hambergur li:nth-child(2).re {
     transform: rotate(45deg) translateY(70%);
     margin-top: -20px;
-    margin-left:30px;
+    margin-left: 30px;
   }
 
   /* menu_slide */
@@ -2003,7 +1976,6 @@ body {
   } */
 
   .left_p {
- 
     transform: translateX(-50px);
     transition: 1s;
     opacity: 0;
@@ -2014,9 +1986,7 @@ body {
     opacity: 1;
   }
 
-
   .left_p_1 {
-   
     transform: translateX(-50px);
     transition: 1s;
     opacity: 0;
@@ -2028,7 +1998,6 @@ body {
     transition-delay: 0.8s;
   }
   .left_p2 {
-  
     transform: translateX(50px);
     transition: 1s;
     opacity: 0;
@@ -2039,7 +2008,6 @@ body {
     opacity: 1;
   }
   .left_p2_2 {
-   
     transform: translateX(50px);
     transition: 1s;
     opacity: 0;
@@ -2050,10 +2018,6 @@ body {
     opacity: 1;
     transition-delay: 0.8s;
   }
-
-
-
-  
 
   /* con3 */
 
@@ -2094,7 +2058,7 @@ body {
     border: 1px solid #ecd8ca;
     /* width: 150px; */
     width: calc(80% / 2);
-    height: 170px;
+    height: 40vw;
     border-radius: 100%;
     position: relative;
     /* margin-top: 10px;
@@ -2119,7 +2083,6 @@ body {
   .con3 ul li:nth-child(3) {
     transition-delay: 0.6s;
   }
-
 
   .con3_icon_center {
     position: absolute;
@@ -2173,7 +2136,6 @@ body {
     font-weight: normal;
     font-family: "Italiana", sans-serif;
     color: #86543a;
-    
   }
   .con6_txt .count2 {
     font-family: "Inter", sans-serif;
@@ -2257,36 +2219,36 @@ body {
   }
 
   /* 푸터 움직임 */
-  .right_mh2{
-    transform: translateX(-200px);
-    opacity: 0;
-    transition: 1s;
-  }
-  .right_mh2.on{
+  .right_mh2 {
     transform: translateX(0px);
     opacity: 1;
+    transition: 1s;
   }
+  /* .right_mh2.on{
+    transform: translateX(0px);
+    opacity: 1;
+  } */
 
-  .upLi{
-    transform: translateY(150px);
+  .upLi {
+    transform: translateY(0px);
     transition: 0.8s;
-    opacity: 0;
+    opacity: 1;
     transition-delay: 0.5s;
   }
-  .upLi.on{
+  /* .upLi.on {
     transform: translateY(0px);
     opacity: 1;
-  }
-  .downLi{
-    transform: translateY(-120px);
+  } */
+  .downLi {
+    transform: translateY(0px);
     transition: 0.8s;
-    opacity: 0;
+    opacity: 1;
     transition-delay: 0.8s;
   }
-  .downLi.on{
+  /* .downLi.on {
     transform: translateY(0px);
     opacity: 1;
-  }
+  } */
 
   /* top_button */
   .top_button {
