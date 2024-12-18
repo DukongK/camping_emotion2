@@ -91,56 +91,55 @@ $(function () {
 
 // --------------------위 각 페이지 별 공통 적용 --------------------
 
-$(function () {
-    $(window).on("scroll", function () {
-        let con1 = $(this).scrollTop();
-        // console.log(con1)
-        let footer = $(this).scrollTop();
-        // console.log(footer);
-        let con4 = $(this).scrollTop();
-        // console.log(con4);
-        let con3 = $(this).scrollTop();
-        // console.log(con3);
-        let con5 = $(this).scrollTop();
-        console.log(con5);
+// $(function () {
+//     $(window).on("scroll", function () {
+//         let con1 = $(this).scrollTop();
+//         // console.log(con1)
+//         let footer = $(this).scrollTop();
+//         // console.log(footer);
+//         let con4 = $(this).scrollTop();
+//         // console.log(con4);
+//         let con3 = $(this).scrollTop();
+//         // console.log(con3);
+//         let con5 = $(this).scrollTop();
+//         console.log(con5);
 
+//         if (con1 >= 580 && con1 <= 600) {
+//             $(".con1_img").addClass("on");
+//         } else if (con1 >= 1200 && con1 <= 1300) {
+//             $(".txt_up").addClass("on");
+//         } else if (con1 >= 1400 && con1 <= 1500) {
+//             $(".con1_img2").addClass("on");
+//         }
+//         else if(con3 >= 3500 && con3 <= 3700){
 
-        if (con1 >= 580 && con1 <= 600) {
-            $(".con1_img").addClass("on");
-        } else if (con1 >= 1200 && con1 <= 1300) {
-            $(".txt_up").addClass("on");
-        } else if (con1 >= 1400 && con1 <= 1500) {
-            $(".con1_img2").addClass("on");
-        } 
-        else if(con3 >= 3500 && con3 <= 3700){
+//             $(".con3 h2").addClass("on");
+//             $(".con3 li:nth-child(2) img").addClass("on");
+//             $(".con3 li:nth-child(1) img").addClass("on");
+//             $(".con3 li:nth-child(3) img").addClass("on");
+//             $(".con3 li:nth-child(2) h3").addClass("on");
+//             $(".con3 li:nth-child(1) h3").addClass("on");
+//             $(".con3 li:nth-child(3) h3").addClass("on");
+//             $(".con3 li p").addClass("on");
+//         }
+//         else if(con4 >= 4400 && con4 <= 4500 ){
+//             $(".con4 ul li:nth-child(1)").addClass("on");
+//             $(".con4 ul li:nth-child(2)").addClass("on");
+//             $(".con4 ul li:nth-child(3)").addClass("on");
+//         }
+//         else if(con5 >= 4900 && con5 <= 5200){
+//             $(".con5_line").addClass("on");
+//             $(".con5_bg ul li:last-child").addClass("on");
+//         }
 
-            $(".con3 h2").addClass("on");
-            $(".con3 li:nth-child(2) img").addClass("on");
-            $(".con3 li:nth-child(1) img").addClass("on");
-            $(".con3 li:nth-child(3) img").addClass("on");
-            $(".con3 li:nth-child(2) h3").addClass("on");
-            $(".con3 li:nth-child(1) h3").addClass("on");
-            $(".con3 li:nth-child(3) h3").addClass("on");
-            $(".con3 li p").addClass("on");
-        }
-        else if(con4 >= 4400 && con4 <= 4500 ){
-            $(".con4 ul li:nth-child(1)").addClass("on");
-            $(".con4 ul li:nth-child(2)").addClass("on");
-            $(".con4 ul li:nth-child(3)").addClass("on");
-        }
-        else if(con5 >= 4900 && con5 <= 5200){
-            $(".con5_line").addClass("on");
-            $(".con5_bg ul li:last-child").addClass("on");
-        }
-        
-        else if (footer >= 4800 && footer <= 4900) {
-            $(".right_mh2").addClass("on");
-            $(".upLi").addClass("on");
-            $(".downLi").addClass("on");
-        }
-        
-    });
-});
+//         else if (footer >= 4800 && footer <= 4900) {
+//             $(".right_mh2").addClass("on");
+//             $(".upLi").addClass("on");
+//             $(".downLi").addClass("on");
+//         }
+
+//     });
+// });
 
 // con1 > 1300
 // con4 4550
@@ -150,3 +149,89 @@ $(function () {
 //     $(".con4 ul li:nth-child(1)").addClass("on");
 //     $(".con4 ul li:nth-child(2)").addClass("on");
 // });
+
+// 삼항연산자 사용
+
+function communityScroll() {
+    // con1
+    $(window).scrollTop() > $(".con1").offset().top - +300
+        ? $(".con1_img").addClass("on")
+        : $(".con1_img").removeClass("on");
+
+    $(window).scrollTop() > $(".con1").offset().top - -200
+        ? $(".txt_up").addClass("on")
+        : $(".txt_up").removeClass("on");
+
+    $(window).scrollTop() > $(".con1").offset().top - -500
+        ? $(".con1_img2").addClass("on")
+        : $(".con1_img2").removeClass("on");
+    // con3
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 h2").addClass("on")
+        : $(".con3 h2").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li:nth-child(2) img").addClass("on")
+        : $(".con3 li:nth-child(2) img").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li:nth-child(1) img").addClass("on")
+        : $(".con3 li:nth-child(1) img").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li:nth-child(3) img").addClass("on")
+        : $(".con3 li:nth-child(3) img").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li:nth-child(2) h3").addClass("on")
+        : $(".con3 li:nth-child(2) h3").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li:nth-child(1) h3").addClass("on")
+        : $(".con3 li:nth-child(1) h3").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li:nth-child(3) h3").addClass("on")
+        : $(".con3 li:nth-child(3) h3").removeClass("on");
+
+    $(window).scrollTop() > $(".con3").offset().top - +300
+        ? $(".con3 li p").addClass("on")
+        : $(".con3 li p").removeClass("on");
+    // con4
+    $(window).scrollTop() > $(".con4").offset().top - +300
+        ? $(".con4 ul li:nth-child(1)").addClass("on")
+        : $(".con4 ul li:nth-child(1)").removeClass("on");
+
+    $(window).scrollTop() > $(".con4").offset().top - +300
+        ? $(".con4 ul li:nth-child(2)").addClass("on")
+        : $(".con4 ul li:nth-child(2)").removeClass("on");
+
+    $(window).scrollTop() > $(".con4").offset().top - +300
+        ? $(".con4 ul li:nth-child(3)").addClass("on")
+        : $(".con4 ul li:nth-child(3)").removeClass("on");
+
+    // con5
+
+    $(window).scrollTop() > $(".con5").offset().top - +300
+        ? $(".con5_line").addClass("on")
+        : $(".con5_line").removeClass("on");
+
+    $(window).scrollTop() > $(".con5").offset().top - +300
+        ? $(".con5_bg ul li:last-child").addClass("on")
+        : $(".con5_bg ul li:last-child").removeClass("on");
+
+    // footer
+    $(window).scrollTop() > $("footer").offset().top - +600
+        ? $(".right_mh2").addClass("on")
+        : $(".right_mh2").removeClass("on");
+    $(window).scrollTop() > $("footer").offset().top - +600
+        ? $(".upLi").addClass("on")
+        : $(".upLi").removeClass("on");
+    $(window).scrollTop() > $("footer").offset().top - +600
+        ? $(".downLi").addClass("on")
+        : $(".downLi").removeClass("on");
+}
+
+$(window).scroll(function () {
+    communityScroll();
+});

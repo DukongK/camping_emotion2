@@ -1339,6 +1339,7 @@ body {
   .con3 {
     margin: 200px auto;
     width: 90%;
+   
   }
 
   .con3 h2 {
@@ -1349,6 +1350,7 @@ body {
     transform: translateY(80px);
     opacity: 0;
     transition: 0.7s;
+    
   }
   .con3 h2.on{
     transform: translateY(0px);
